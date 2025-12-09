@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>KMNZ 5th Oneman Live Going Up</title>
+    <meta name="meta" content="KMNZ 5th Oneman Live Going Upの非公式ファンメイドページです">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <!-- X(旧Twitter) ウィジェット読み込み -->
+</head>
+<body>
+<!-- ローディング部分 -->
+<div id="loader" aria-hidden="false" class="loader">
+    <img src="images/logo.png" alt="ロゴ" class="loader-logo" />
+    <div class="loader-bar-wrap" aria-hidden="true">
+        <div class="loader-bar">
+            <div class="loader-progress" style="width:0%"></div>
+        </div>
+        <img src="images/thumb.png" alt="" class="loader-thumb" style="left:0%" /> <!-- 使わない -->
+        <div class="loader-percent">0%</div>
+    </div>
+</div>
+
+<!-- 背景の画像 -->
+<div class="bg-image" aria-hidden="true">
+    <img src="images/image1.jpg" alt="">
+</div>
+<!-- 透過したロゴ -->
+<div class="front-image" aria-hidden="true">
+    <img src="images/image2.png" alt="">
+</div>
+
+<!-- 画像の高さ分だけmainを下げる -->
+<div class="hero-spacer" aria-hidden="true"></div>
+
+<!--ここからスクロール可能部分-->
+<main class="site-main">
+    <div class="top-countdown" data-target="2026-01-12" aria-label="開園時間までのカウントダウン">
+        <div class="top-countdown-title">開演まで</div>
+        <div class="cd-item"><span class="cd-val" data-unit="days">0</span><span class="cd-label">日</span></div>
+        <div class="cd-item"><span class="cd-val" data-unit="hours">00</span><span class="cd-label">時間</span></div>
+        <div class="cd-item"><span class="cd-val" data-unit="minutes">00</span><span class="cd-label">分</span></div>
+        <div class="cd-item"><span class="cd-val" data-unit="seconds">00</span><span class="cd-label">秒</span></div>
+    </div><br>
+
+    <!--公演情報 -->
+    <div class="show-info" aria-hidden="false">
+        <div class="info-block">
+            <div class="info-label">公演名</div>
+            <div class="info-value">KMNZ 5th Oneman Live</div>
+        </div>
+        <br>
+        <div class="info-block fade-on-scroll">
+            <div class="info-label">TITLE</div>
+            <div class="info-value">Going Up</div>
+        </div>
+        <br>
+        <div class="info-block fade-on-scroll">
+            <div class="info-label">STAGE</div>
+            <a href="https://www.zepp.co.jp/hall/shinjuku/"><div class="info-value">Zepp新宿(TOKYO)</div></a>
+        </div>
+        <br>
+        <div class="info-block fade-on-scroll">
+            <div class="info-label">DATE</div>
+            <div class="info-value">2026/01/12</div>
+        </div>
+        <div class="info-block fade-on-scroll">
+            <div class="info-label"></div>
+            <div class="info-value">開場16:00 開始17:00</div>
+        </div>
+
+        <div style="min-height:5vh;"></div>
+        <div class="midasi">ABOUT KMNZ</div>
+
+        <!-- KMNZの情報 -->
+        <section class="cast-list" aria-label="KMN情報">
+          <article class="cast-item fade-on-scroll">
+            <img class="cast-avatar" src="https://pbs.twimg.com/profile_images/1998014187231121408/KPz_YIWf_400x400.jpg" alt="LITADON">
+            <div class="cast-info">
+              <div class="cast-name">KMNZ LITA</div>
+              <a class="cast-x" href="https://x.com/kmnzlita" target="_blank" rel="noopener noreferrer">
+                <img src="images/x.jpg" alt="" aria-hidden="true" width="22" height="22">
+              </a>
+            </div>
+          </article>
+
+          <article class="cast-item fade-on-scroll">
+            <img class="cast-avatar" src="https://pbs.twimg.com/profile_images/1998075937594966020/axm1U68R_400x400.jpg" alt="NERONERO">
+            <div class="cast-info">
+              <div class="cast-name">KMNZ NERO</div>
+              <a class="cast-x" href="https://x.com/kmnznero_" target="_blank" rel="noopener noreferrer">
+                <img src="images/x.jpg" alt="" aria-hidden="true" width="22" height="22">
+              </a>
+            </div>
+          </article>
+
+          <article class="cast-item fade-on-scroll">
+            <img class="cast-avatar" src="https://pbs.twimg.com/profile_images/1998014293640712192/RLY3YZAb_400x400.jpg" alt="CHINA">
+            <div class="cast-info">
+              <div class="cast-name">KMNZ TINA</div>
+              <a class="cast-x" href="https://x.com/kmnztina_" target="_blank" rel="noopener noreferrer">
+                <img src="images/x.jpg" alt="" aria-hidden="true" width="22" height="22">
+              </a>
+            </div>
+          </article>
+        </section>
+        
+
+        <!-- 説明文 -->
+        <section class="kmnz-card fade-on-scroll fade-soft" aria-label="KMNZについて">
+          <p class="kmnz-card-text">
+            KMNZ(ケモノズ)は、KMNZ LITA(リタ)、KMNZ NERO(ネロ)、KMNZ TINA(ティナ) の3人組による、バーチャルHIPHOPユニット。<br>
+            ファンを指す呼称は「KMNHZ(ケモノヘッズ)」。
+          </p>
+          <!--youtube、Xへのリンク-->
+          <a class="cast-x" href="https://www.youtube.com/@kmnz" target="_blank" rel="noopener noreferrer" aria-label="KMNZのYouTube">
+            <img src="images/youtube.png" alt="" aria-hidden="true" width="22">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+
+          <a class="cast-x" href="https://x.com/kmnstreet" target="_blank" rel="noopener noreferrer" aria-label="KMNZ公式X" style="margin-left:8px;">
+            <img src="images/x.jpg" alt="" aria-hidden="true" width="22">
+            <span class="visually-hidden">X</span>
+          </a>
+        </section>
+        
+
+        <!-- チケットの情報 -->
+        <div style="min-height:5vh;"></div>
+        <div class="midasi">TICKET</div>
+
+        <section class="ticket-section" aria-label="チケット情報">
+          <div class="ticket-grid">
+            <article class="ticket-card fade-on-scroll is-closed">
+              <header class="ticket-head">
+                <span class="ticket-type fc">KMNCLUB先行</span>
+                <span class="ticket-status">受付終了しました</span>
+              </header>
+              <div class="ticket-body">
+                <div class="ticket-period">
+                  <span class="ticket-label">受付期間</span>
+                  <span class="ticket-value">終了</span>
+                </div>
+                <ul class="ticket-notes">
+                  <li>KMNZメンバーシップ「KMNCLUB Members」以上に入会している方が対象となります。</li>
+                  <li>プレミアムチケット特典:ライブKVポストカード入りスタンド(直筆サイン入り)</li>
+                  <li>オールスタンディング</li>
+                </ul>
+              </div>
+              <footer class="ticket-foot">
+                <a class="ticket-btn is-disabled" href="https://www.youtube.com/channel/UC68J5pWEshmwhDH45qnpIsg/membership" aria-disabled="true" tabindex="-1">
+                  受付終了
+                </a>
+              </footer>
+            </article>
+
+            <article class="ticket-card fade-on-scroll">
+              <header class="ticket-head">
+                <span class="ticket-type general">一般販売</span>
+              </header>
+              <div class="ticket-body">
+                <div class="ticket-period">
+                  <span class="ticket-label">販売期間</span>
+                  <span class="ticket-value">2025/12/10 21:00 ～</span>
+                </div>
+                <ul class="ticket-notes">
+                  <li>チケットの枚数には限りがあります</li>
+                  <li>規定の枚数に達し次第、チケットは販売終了となります</li>
+                  <li>オールスタンディング</li>
+                </ul>
+              </div>
+              <footer class="ticket-foot">
+                <a class="ticket-btn" href="https://t.co/RzLSWZx5ET" target="_blank" rel="noopener noreferrer" aria-label="一般販売の購入サイト">
+                  購入サイトへ
+                </a>
+              </footer>
+            </article>
+
+            <!-- 3rd onemanの情報をもとに記述(未発表)-->
+            <article class="ticket-card fade-on-scroll fade-soft">
+              <header class="ticket-head">
+                <span class="ticket-type stream">ネット配信チケット</span>
+              </header>
+              <div class="ticket-body">
+                <div class="ticket-period">
+                  <span class="ticket-label">販売期間</span>
+                  <span class="ticket-value">販売期間未定</span>
+                </div>
+                <ul class="ticket-notes">
+                  <li>※チケットご購入時にシステム利用料が発生します、予めご了承ください。</li>
+                  <li>アーカイブ配信もご視聴いただけます。</li>
+                </ul>
+              </div>
+              <footer class="ticket-foot">
+                <a class="ticket-btn" href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Z-an？のチケット購入ページへ">
+                  視聴チケットへ
+                </a>
+              </footer>
+            </article>
+          </div>
+        </section>
+
+        <!--グッズ情報出たら差し替え-->
+        <div style="min-height:5vh;"></div>
+        <div class="midasi">GOODS</div>
+        <section class="goods-section" aria-label="グッズ情報(準備中)">
+          <div class="goods-placeholder fade-on-scroll fade-soft">
+            <div class="goods-text">COMING SOON...</div>
+          </div>
+        </section>
+
+        <!-- 注意事項 RK music公式より転載-->
+        <div class="midasi">注意事項</div>
+        <section class="notes-section" aria-label="注意事項">
+          <div class="accordion">
+            <details class="acc-item fade-on-scroll">
+              <summary class="acc-summary">プレミアム特典に関して</summary>
+              <div class="acc-panel">
+                ・物販の開始時より、会場内に特典引換所を設置いたします。<br>
+                ・特典引換券1枚につき、特典1点をお渡しいたします。<br>
+                ・特典引換券はチケット発券と同時に付与されます。<br>
+                ・終演後も特典の引き換えを受け付けております。<br>
+                ・本特典は“来場特典”となるため、ご来場いただけないお客様への発送対応は行っておりません。あらかじめご了承ください。
+              </div>
+            </details>
+
+            <details class="acc-item fade-on-scroll">
+              <summary class="acc-summary">入場順に関して</summary>
+              <div class="acc-panel">
+                    当日は以下の順番での入場案内を予定しております。<br><br>
+
+                    ①先行プレミアムチケット(整理番号順S)<br>
+                    ②一般プレミアムチケット(整理番号順S)<br>
+                    ③先行スタンダードチケット(整理番号順A)<br>
+                    ④一般スタンダードチケット(整理番号順A)<br>
+              </div>
+            </details>
+
+            <details class="acc-item fade-on-scroll">
+              <summary class="acc-summary">グッズ情報</summary>
+              <div class="acc-panel">
+                本公演では当日会場での物販を実施予定となっております。<br>
+                詳細は後日ご案内させていただきます。<br>
+              </div>
+            </details>
+
+            <details class="acc-item fade-on-scroll">
+              <summary class="acc-summary">フラワースタンドに関して</summary>
+              <div class="acc-panel">
+                KMNZに関するフラワースタンドのみ受付させて頂きます。<br>
+                ご依頼主様側にて当日配送、当日回収を指定の上、ご手配をお願いいたします。<br><br>
+
+                配送時間：当日 9:00~12:00<br>
+                回収時間：当日中<br>
+                回収時間に関しては、当日受け取った運営チームが直接その場で案内いたします。<br>  
+                サイズ規定：厳密な規定はございませんが目安として高さ180cm・200cm以内、足元40cm×40cmにてお願いいたします。   <br><br>
+
+                発送先：<br>
+                〒160-0021 東京都新宿区歌舞伎町1-29-1<br> 
+                東急歌舞伎町タワーB1F Zepp Shinjuku正面入口 着付<br><br>
+
+                ※お送りいただきましたフラワースタンドにつきましては、スペース上可能な範囲でロビーに飾らせていただきます。<br>
+                ※多数のフラワースタンドをいただきました場合、すべてを飾ることはできない場合もございますので、予めご了承下さい。<br>
+                ※スタンド花の会場内（会場敷地内の場外も含む）での設置場所については会場利用規定及び、消防法にのっとった形で主催側にて判断させて頂いた上、順不同で設置させていただきます。<br>
+                ※設置場所や順番の指定のご希望には応じられませんので、予めご了承下さい。<br>
+                ※連結モノ等、デザイン上、一般動線エリアでの展示が危険と判断されたものは都合設置ができない場合がございますので、予めご了承下さい。<br>
+              </div>
+            </details>
+
+            <details class="acc-item fade-on-scroll fade-soft">
+              <summary class="acc-summary">プレゼント、お手紙に関して</summary>
+              <div class="acc-panel">
+                当日KMNZへのプレゼント、お手紙は会場内に設置されるプレゼントBOXへお入れください。<br>
+                プレゼント、お手紙に関してはスタッフが中身を確認させて頂きます。<br>
+                また以下に該当するものは、プレゼントとしてお預かりすることが出来ない物となります。<br><br>
+
+                ・現金含むギフトカードなど金券類<br>
+                ・生き物、なま物（生花含む）<br>
+                ・飲食物<br>
+                ・開封された物/使用済みのもの ・個人情報が記載されているもの（ハンドルネームは問題ございません）<br>
+                ・その他、運営がお預かり出来ないと判断したもの<br>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <div style="min-height:5vh;"></div>
+        <div class="midasi">X 公式情報</div>
+
+        <!-- Xのポスト　-->
+        <a class="twitter-timeline" href="https://twitter.com/KMNSTREET?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <div style="min-height:5vh;"></div>
+        <div class="midasi">クレジット</div>
+
+        <!-- クレジット -->
+        <section class="credit-section" aria-label="クレジット">
+          <dl class="credit-list">
+            <div class="credit-row">
+              <dt>主催</dt><dd>RK Music</dd>
+            </div>
+            <div class="credit-row">
+              <dt>制作</dt><dd>LIVE EXSAM（ライブエグザム）</dd>
+            </div>
+            <div class="credit-row">
+              <dt>運営協力</dt><dd>DISK GARAGE（ディスクガレージ）</dd>
+            </div>
+          </dl>
+        </section>
+
+        <!-- シェア -->
+        <section class="share-section" aria-label="このページをシェア">
+          <div class="share-title">SHARE</div>
+          <div class="share-buttons">
+            <a class="share-btn x js-share-x" href="#" target="_blank" rel="noopener" aria-label="Xでシェア">
+              <img src="images/x.jpg" alt="" aria-hidden="true" />
+              <span>Xでシェア</span>
+            </a>
+            <a class="share-btn line js-share-line" href="#" target="_blank" rel="noopener" aria-label="LINEでシェア">
+              <img src="images/line.png" alt="" aria-hidden="true" />
+              <span>LINEでシェア</span>
+            </a>
+          </div>
+        </section>
+            <footer class="footer">
+        <div style="min-height:1vh;"></div>
+            <br>このサイトは非公式のファンメイドページです。
+            <p>2025 @ru_vwf</p>
+    </footer>
+    </div>
+
+
+    <!-- 消すと動かない -->
+
+</main>
+
+</body>
+</html>
