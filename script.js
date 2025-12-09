@@ -103,33 +103,49 @@
         if (loaded < total) loaded = total;
     }, 8000);
 
-    // 画像にmainが重ならないようにする処理
+    // 画像にmainが重ならないようにする処理（frontとbgを同サイズにし、その高さをヒーローに反映）
     function updateHeroHeight() {
         const bgImg = document.querySelector('.bg-image img');
+        const fgImg = document.querySelector('.front-image img');
         const spacer = document.querySelector('.hero-spacer');
+        const bgWrap = document.querySelector('.bg-image');
+        const fgWrap = document.querySelector('.front-image');
         const fallback = Math.round(window.innerHeight * 0.6);
 
-        if (!bgImg) {
+        // 有効幅: 横画面時は左右25vwの余白を引いた幅、縦画面時は全幅
+        const isLandscape = window.matchMedia('(orientation: landscape)').matches;
+        const sidePaddingRate = isLandscape ? 0.25 : 0;
+        const effectiveWidth = Math.max(1, Math.round(window.innerWidth * (1 - sidePaddingRate * 2)));
+
+        // 基準画像: frontがあればfront、なければbg
+        const baseImg = fgImg || bgImg;
+        if (!baseImg) {
             document.documentElement.style.setProperty('--hero-height', fallback + 'px');
             if (spacer) spacer.style.height = fallback + 'px';
+            if (bgWrap) bgWrap.style.height = fallback + 'px';
+            if (fgWrap) fgWrap.style.height = fallback + 'px';
             return;
         }
 
         function applyHeight() {
-            const renderedHeight = Math.round(bgImg.naturalHeight * (window.innerWidth / Math.max(1, bgImg.naturalWidth)));
+            const scale = effectiveWidth / Math.max(1, baseImg.naturalWidth);
+            const renderedHeight = Math.round(baseImg.naturalHeight * scale);
             const h = Math.max(48, renderedHeight); // 最低高さを確保
+
             document.documentElement.style.setProperty('--hero-height', h + 'px');
             if (spacer) spacer.style.height = h + 'px';
-            const bg = document.querySelector('.bg-image');
-            if (bg) bg.style.height = h + 'px';
+            if (bgWrap) bgWrap.style.height = h + 'px';
+            if (fgWrap) fgWrap.style.height = h + 'px';
         }
 
-        if (bgImg.naturalWidth && bgImg.naturalHeight) {
+        if (baseImg.naturalWidth && baseImg.naturalHeight) {
             applyHeight();
         } else {
-            bgImg.addEventListener('load', applyHeight, { once: true });
+            baseImg.addEventListener('load', applyHeight, { once: true });
             document.documentElement.style.setProperty('--hero-height', fallback + 'px');
             if (spacer) spacer.style.height = fallback + 'px';
+            if (bgWrap) bgWrap.style.height = fallback + 'px';
+            if (fgWrap) fgWrap.style.height = fallback + 'px';
         }
     }
 
