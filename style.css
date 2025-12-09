@@ -292,6 +292,37 @@ body:not(.page-ready) .fade-on-scroll {
 }
 
 
+/* tab pc用 */
+@media (orientation: landscape) {
+    :root {
+        --hero-overlap: 96px;
+    }
+    .bg-image,
+    .front-image {
+        padding: 0 22vw; 
+        height: auto;
+        box-sizing: border-box;
+        top: 0;
+    }
+    .front-image img,
+    .bg-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; 
+        object-position: top center;
+        display: block;
+    }
+
+    .bg-image,
+    .front-image {
+        height: var(--hero-height, auto);
+    }
+
+    .hero-spacer {
+        height: auto;
+    }
+}
+
 
 /* カウントダウン*/
 .top-countdown {
